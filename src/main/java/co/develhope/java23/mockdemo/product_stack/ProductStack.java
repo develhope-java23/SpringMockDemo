@@ -12,6 +12,9 @@ public class ProductStack {
    private String name;
    private int quantity;
 
+   public ProductStack() {
+   }
+
    public ProductStack(long id, String name, int quantity) {
       this.id = id;
       this.name = name;
@@ -19,7 +22,7 @@ public class ProductStack {
    }
 
    public long getId() {
-       return id;
+      return id;
    }
 
    public String getName() {
@@ -27,6 +30,6 @@ public class ProductStack {
    }
 
    public int getQuantity() {
-       return quantity;
+      return quantity;
    }
 }
