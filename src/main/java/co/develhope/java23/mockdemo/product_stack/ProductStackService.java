@@ -12,6 +12,10 @@ public class ProductStackService {
     private ProductStackRepository repository;
     
     public ProductStack insert(ProductStack productStack) {
+        if(productStack.getQuantity() == 0) {
+            throw new IllegalArgumentException("Quantity is 0");
+        }
+
         return repository.save(productStack);
     }
 
